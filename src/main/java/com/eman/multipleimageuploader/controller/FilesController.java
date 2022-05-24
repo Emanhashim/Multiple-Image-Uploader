@@ -30,7 +30,7 @@ public class FilesController {
   @Autowired
   FilesStorageService storageService;
 
-  @PostMapping("/upload/images")
+  @PostMapping("/upload/multiple/images")
   public ResponseEntity<ResponseMessage> uploadFiles(@RequestParam("files") MultipartFile[] files) {
     String message = "";
     try {
